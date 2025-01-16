@@ -1,0 +1,72 @@
+{
+  "common": {
+    "amount": "Valor",
+    "status": "Status",
+    "download": "Baixar",
+    "edit": "Editar",
+    "delete": "Excluir",
+    "deleted": "Invoice excluída com sucesso",
+    "save": "Salvar",
+    "saved": "Salvo com sucesso",
+    "cancel": "Cancelar",
+    "dueDate": "Data de Vencimento",
+    "notes": "Observações",
+    "terms": "Termos",
+    "create": "Criar",
+    "error": "Ocorreu um erro. Por favor, tente novamente.",
+    "confirmDelete": "Tem certeza que deseja excluir esta invoice?",
+    "duplicated": "Invoice duplicada com sucesso"
+  },
+  "invoice": {
+    "status": {
+      "paid": "Pago",
+      "pending": "Pendente"
+    },
+    "new": "Nova Invoice",
+    "edit": "Editar Invoice",
+    "details": "Detalhes",
+    "items": "Itens",
+    "addItem": "Adicionar Item",
+    "itemDescription": "Descrição",
+    "quantity": "Qtd",
+    "price": "Valor",
+    "total": "Total",
+    "includingTax": "Incluindo {{rate}}% de impostos",
+    "taxRate": "Taxa de Imposto (%)",
+    "additionalNotes": "Observações adicionais...",
+    "termsAndConditions": "Termos e condições...",
+    "companyDetails": "Nome do Recebedor",
+    "clientDetails": "Nome",
+    "companyName": "Nome",
+    "clientName": "Nome",
+    "phone": "Telefone",
+    "address": "Endereço",
+    "street": "Rua",
+    "city": "Cidade",
+    "state": "Estado",
+    "zipCode": "CEP",
+    "country": "País",
+    "wireInstructions": "Canal de Pagamento / Wire Instructions",
+    "bankName": "Nome do Banco / Bank Name",
+    "accountName": "Nome do Beneficiário / Account Name",
+    "accountNumber": "Número da Conta / Account Number",
+    "routingNumber": "Routing Number",
+    "swiftCode": "SWIFT Code",
+    "iban": "IBAN"
+  },
+  "invoices": {
+    "title": "Faturas",
+    "createNew": "Nova Invoice",
+    "number": "Fatura Nº",
+    "receiver": "Recebedor",
+    "payer": "Pagador",
+    "duplicate": "Duplicar",
+    "notFound": "Fatura não encontrada"
+  },
+  "nav": {
+    "invoices": "Faturas",
+    "teams": "Equipes",
+    "settings": "Configurações",
+    "signOut": "Sair"
+  }
+}
