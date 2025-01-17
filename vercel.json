@@ -2,14 +2,18 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "destination": "/"
     }
   ],
   "routes": [
+    { 
+      "handle": "filesystem"
+    },
     {
-      "src": "/[^.]+",
-      "dest": "/",
-      "status": 200
+      "src": "/.*",
+      "dest": "/index.html"
     }
-  ]
+  ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist"
 }
