@@ -3,6 +3,7 @@ import {
   signInWithEmailAndPassword, 
   signOut as firebaseSignOut,
   onAuthStateChanged,
+  sendPasswordResetEmail,
   User
 } from 'firebase/auth';
 import { auth } from '../config/firebase';
@@ -15,6 +16,7 @@ interface AuthStore {
   initialize: () => Promise<void>;
   signIn: (email: string, password: string) => Promise<void>;
   signOut: () => Promise<void>;
+  resetPassword: (email: string) => Promise<void>;
 }
 
 export const useAuthStore = create<AuthStore>((set) => {
@@ -101,6 +103,16 @@ export const useAuthStore = create<AuthStore>((set) => {
           loading: false 
         });
         throw error;
+      }
+    },
+
+    resetPassword: async (email: string) => {
+      try {
+        await sendPasswordResetEmail(auth, email);
+        set({ error: null });
+      } catch (error: any) {
+        console.error('Password reset error:', error);
+        set({ error: error.message });
       }
     }
   };
